@@ -1,0 +1,5 @@
+.metadata/
+org.xtext.example.basicfamily.ide/
+org.xtext.example.basicfamily.tests/
+org.xtext.example.basicfamily.ui.tests/
+org.xtext.example.basicfamily.ui/

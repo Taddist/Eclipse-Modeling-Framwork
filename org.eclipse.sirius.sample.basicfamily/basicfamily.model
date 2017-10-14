@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<basicfamily:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://www.eclipse.org/sirius/sample/basicfamily" xmi:id="__79ooLBhEeeY6KzofNVFlw" name="Taddist">
+  <members xsi:type="basicfamily:Woman" xmi:id="_B5ZlsLBiEeeY6KzofNVFlw" name="Fatima" children="_KjKl8LBkEeeY6KzofNVFlw"/>
+  <members xsi:type="basicfamily:Woman" xmi:id="_KjKl8LBkEeeY6KzofNVFlw" name="Afaf" parents="_B5ZlsLBiEeeY6KzofNVFlw _M-TLoLBkEeeY6KzofNVFlw" mother="_B5ZlsLBiEeeY6KzofNVFlw" father="_M-TLoLBkEeeY6KzofNVFlw"/>
+  <members xsi:type="basicfamily:Man" xmi:id="_M-TLoLBkEeeY6KzofNVFlw" name="Abdeljalil" children="_KjKl8LBkEeeY6KzofNVFlw"/>
+</basicfamily:Family>
