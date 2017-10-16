@@ -9,7 +9,7 @@ Family returns Family:
 	'Family'
 	name=EString
 	'{'
-		('members' '{' members+=Person ( "," members+=Person)* '}' )?
+		('composed' 'of' '{' members+=Person ( "," members+=Person)* '}' )?
 	'}';
 
 Person returns Person:

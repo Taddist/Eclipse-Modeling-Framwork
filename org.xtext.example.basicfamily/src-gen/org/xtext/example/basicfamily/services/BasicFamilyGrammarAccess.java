@@ -33,26 +33,27 @@ public class BasicFamilyGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cNameEStringParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cMembersKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
-		private final Assignment cMembersAssignment_4_2 = (Assignment)cGroup_4.eContents().get(2);
-		private final RuleCall cMembersPersonParserRuleCall_4_2_0 = (RuleCall)cMembersAssignment_4_2.eContents().get(0);
-		private final Group cGroup_4_3 = (Group)cGroup_4.eContents().get(3);
-		private final Keyword cCommaKeyword_4_3_0 = (Keyword)cGroup_4_3.eContents().get(0);
-		private final Assignment cMembersAssignment_4_3_1 = (Assignment)cGroup_4_3.eContents().get(1);
-		private final RuleCall cMembersPersonParserRuleCall_4_3_1_0 = (RuleCall)cMembersAssignment_4_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_4_4 = (Keyword)cGroup_4.eContents().get(4);
+		private final Keyword cComposedKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Keyword cOfKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
+		private final Keyword cLeftCurlyBracketKeyword_4_2 = (Keyword)cGroup_4.eContents().get(2);
+		private final Assignment cMembersAssignment_4_3 = (Assignment)cGroup_4.eContents().get(3);
+		private final RuleCall cMembersPersonParserRuleCall_4_3_0 = (RuleCall)cMembersAssignment_4_3.eContents().get(0);
+		private final Group cGroup_4_4 = (Group)cGroup_4.eContents().get(4);
+		private final Keyword cCommaKeyword_4_4_0 = (Keyword)cGroup_4_4.eContents().get(0);
+		private final Assignment cMembersAssignment_4_4_1 = (Assignment)cGroup_4_4.eContents().get(1);
+		private final RuleCall cMembersPersonParserRuleCall_4_4_1_0 = (RuleCall)cMembersAssignment_4_4_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_4_5 = (Keyword)cGroup_4.eContents().get(5);
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Family:
 		//	{Family}
 		//	'Family'
 		//	name=EString
-		//	'{' ('members' '{' members+=Person ("," members+=Person)* '}')?
+		//	'{' ('composed' 'of' '{' members+=Person ("," members+=Person)* '}')?
 		//	'}';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Family} 'Family' name=EString '{' ('members' '{' members+=Person ("," members+=Person)* '}')? '}'
+		//{Family} 'Family' name=EString '{' ('composed' 'of' '{' members+=Person ("," members+=Person)* '}')? '}'
 		public Group getGroup() { return cGroup; }
 		
 		//{Family}
@@ -70,35 +71,38 @@ public class BasicFamilyGrammarAccess extends AbstractGrammarElementFinder {
 		//'{'
 		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
 		
-		//('members' '{' members+=Person ("," members+=Person)* '}')?
+		//('composed' 'of' '{' members+=Person ("," members+=Person)* '}')?
 		public Group getGroup_4() { return cGroup_4; }
 		
-		//'members'
-		public Keyword getMembersKeyword_4_0() { return cMembersKeyword_4_0; }
+		//'composed'
+		public Keyword getComposedKeyword_4_0() { return cComposedKeyword_4_0; }
+		
+		//'of'
+		public Keyword getOfKeyword_4_1() { return cOfKeyword_4_1; }
 		
 		//'{'
-		public Keyword getLeftCurlyBracketKeyword_4_1() { return cLeftCurlyBracketKeyword_4_1; }
+		public Keyword getLeftCurlyBracketKeyword_4_2() { return cLeftCurlyBracketKeyword_4_2; }
 		
 		//members+=Person
-		public Assignment getMembersAssignment_4_2() { return cMembersAssignment_4_2; }
+		public Assignment getMembersAssignment_4_3() { return cMembersAssignment_4_3; }
 		
 		//Person
-		public RuleCall getMembersPersonParserRuleCall_4_2_0() { return cMembersPersonParserRuleCall_4_2_0; }
+		public RuleCall getMembersPersonParserRuleCall_4_3_0() { return cMembersPersonParserRuleCall_4_3_0; }
 		
 		//("," members+=Person)*
-		public Group getGroup_4_3() { return cGroup_4_3; }
+		public Group getGroup_4_4() { return cGroup_4_4; }
 		
 		//","
-		public Keyword getCommaKeyword_4_3_0() { return cCommaKeyword_4_3_0; }
+		public Keyword getCommaKeyword_4_4_0() { return cCommaKeyword_4_4_0; }
 		
 		//members+=Person
-		public Assignment getMembersAssignment_4_3_1() { return cMembersAssignment_4_3_1; }
+		public Assignment getMembersAssignment_4_4_1() { return cMembersAssignment_4_4_1; }
 		
 		//Person
-		public RuleCall getMembersPersonParserRuleCall_4_3_1_0() { return cMembersPersonParserRuleCall_4_3_1_0; }
+		public RuleCall getMembersPersonParserRuleCall_4_4_1_0() { return cMembersPersonParserRuleCall_4_4_1_0; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_4_4() { return cRightCurlyBracketKeyword_4_4; }
+		public Keyword getRightCurlyBracketKeyword_4_5() { return cRightCurlyBracketKeyword_4_5; }
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
@@ -554,7 +558,7 @@ public class BasicFamilyGrammarAccess extends AbstractGrammarElementFinder {
 	//	{Family}
 	//	'Family'
 	//	name=EString
-	//	'{' ('members' '{' members+=Person ("," members+=Person)* '}')?
+	//	'{' ('composed' 'of' '{' members+=Person ("," members+=Person)* '}')?
 	//	'}';
 	public FamilyElements getFamilyAccess() {
 		return pFamily;

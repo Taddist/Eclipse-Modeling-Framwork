@@ -111,20 +111,24 @@ ruleFamily returns [EObject current=null]
 			newLeafNode(otherlv_3, grammarAccess.getFamilyAccess().getLeftCurlyBracketKeyword_3());
 		}
 		(
-			otherlv_4='members'
+			otherlv_4='composed'
 			{
-				newLeafNode(otherlv_4, grammarAccess.getFamilyAccess().getMembersKeyword_4_0());
+				newLeafNode(otherlv_4, grammarAccess.getFamilyAccess().getComposedKeyword_4_0());
 			}
-			otherlv_5='{'
+			otherlv_5='of'
 			{
-				newLeafNode(otherlv_5, grammarAccess.getFamilyAccess().getLeftCurlyBracketKeyword_4_1());
+				newLeafNode(otherlv_5, grammarAccess.getFamilyAccess().getOfKeyword_4_1());
+			}
+			otherlv_6='{'
+			{
+				newLeafNode(otherlv_6, grammarAccess.getFamilyAccess().getLeftCurlyBracketKeyword_4_2());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getFamilyAccess().getMembersPersonParserRuleCall_4_2_0());
+						newCompositeNode(grammarAccess.getFamilyAccess().getMembersPersonParserRuleCall_4_3_0());
 					}
-					lv_members_6_0=rulePerson
+					lv_members_7_0=rulePerson
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getFamilyRule());
@@ -132,23 +136,23 @@ ruleFamily returns [EObject current=null]
 						add(
 							$current,
 							"members",
-							lv_members_6_0,
+							lv_members_7_0,
 							"org.xtext.example.basicfamily.BasicFamily.Person");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 			(
-				otherlv_7=','
+				otherlv_8=','
 				{
-					newLeafNode(otherlv_7, grammarAccess.getFamilyAccess().getCommaKeyword_4_3_0());
+					newLeafNode(otherlv_8, grammarAccess.getFamilyAccess().getCommaKeyword_4_4_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getFamilyAccess().getMembersPersonParserRuleCall_4_3_1_0());
+							newCompositeNode(grammarAccess.getFamilyAccess().getMembersPersonParserRuleCall_4_4_1_0());
 						}
-						lv_members_8_0=rulePerson
+						lv_members_9_0=rulePerson
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getFamilyRule());
@@ -156,21 +160,21 @@ ruleFamily returns [EObject current=null]
 							add(
 								$current,
 								"members",
-								lv_members_8_0,
+								lv_members_9_0,
 								"org.xtext.example.basicfamily.BasicFamily.Person");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			otherlv_9='}'
+			otherlv_10='}'
 			{
-				newLeafNode(otherlv_9, grammarAccess.getFamilyAccess().getRightCurlyBracketKeyword_4_4());
+				newLeafNode(otherlv_10, grammarAccess.getFamilyAccess().getRightCurlyBracketKeyword_4_5());
 			}
 		)?
-		otherlv_10='}'
+		otherlv_11='}'
 		{
-			newLeafNode(otherlv_10, grammarAccess.getFamilyAccess().getRightCurlyBracketKeyword_5());
+			newLeafNode(otherlv_11, grammarAccess.getFamilyAccess().getRightCurlyBracketKeyword_5());
 		}
 	)
 ;
