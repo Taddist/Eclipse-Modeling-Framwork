@@ -1,0 +1,13 @@
+// Family Taddist { }
+// Family Taddist { members { Man Abdeljalil { } }}
+
+
+Family Taddist {  
+	composed of  { 
+		Man Abdeljalil {
+			 children ( Abdeljalil) },
+	    Woman Fatime {
+	    	children  (Abdeljalil)}
+	    }
+	    
+	    }
