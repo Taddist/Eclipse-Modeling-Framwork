@@ -1,6 +1,15 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: org.eclipse.sirius.sample.basicfamily
-Bundle-SymbolicName: org.eclipse.sirius.sample.basicfamily; singleton:=true
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.sirius.sample.basicfamily;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.eclipse.sirius.sample.basicfamily,
+ org.eclipse.sirius.sample.basicfamily.impl,
+ org.eclipse.sirius.sample.basicfamily.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy
