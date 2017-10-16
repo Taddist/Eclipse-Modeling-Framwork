@@ -2,4 +2,7 @@
 org.eclipse.sirius.sample.basicfamily.edit/
 org.eclipse.sirius.sample.basicfamily.editor/
 org.eclipse.sirius.sample.basicfamily.tests/
+org.xtext.example.basicfamily.ide/
+org.xtext.example.basicfamily.tests/
+org.xtext.example.basicfamily.ui.tests/
 
